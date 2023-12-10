@@ -93,7 +93,8 @@ h1.className = "header"
 //document.getElementById("anotherElement").append(h1)
 
 const page = (
-    <> <!--  -->
+    //Use this to not leave any tag in DOM
+    <>
         <h1>const element title</h1>
         <p>const element paragraph</p>
     </>
@@ -104,10 +105,10 @@ console.log(page);
 root.render(
     <React.StrictMode>
         <h1 id="header">Hello world</h1>
-        <Navbar/>
-        <MainContent/>
+        <Navbar />
+        <MainContent />
         {page}
-        <Footer/>
+        <Footer />
     </React.StrictMode>
 );
 
