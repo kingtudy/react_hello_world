@@ -48,11 +48,67 @@ function Navbar() {
     )
 }
 
+function MainContent() {
+    return (
+        <div className="main-content-container">
+            {test}
+        </div>
+    )
+}
+
+function Footer() {
+    return (
+        <div className="footer-data d-flex">
+            <div className="col-md-4">
+                <ul className="footer-list">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul className="footer-list">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul className="footer-list">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+var test = "test" + 1
+
+/* Append an element to an id */
+const h1 = document.createElement("h1")
+h1.textContent = "Test test"
+h1.className = "header"
+//document.getElementById("anotherElement").append(h1)
+
+const page = (
+    <> <!--  -->
+        <h1>const element title</h1>
+        <p>const element paragraph</p>
+    </>
+)
+
+console.log(page);
+
 root.render(
-  <React.StrictMode>
-      <h1>Hello world</h1>
-      <Navbar />
-  </React.StrictMode>
+    <React.StrictMode>
+        <h1 id="header">Hello world</h1>
+        <Navbar/>
+        <MainContent/>
+        {page}
+        <Footer/>
+    </React.StrictMode>
 );
 
 
