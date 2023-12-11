@@ -1,25 +1,28 @@
 import react from "react"
 import reactDOM from "react-dom"
-
+import "./style.css"
 function Main() {
     return (
-        <>
+        <div className="container">
             <Header />
             <Content />
             <Footer />
-        </>
+        </div>
     )
 }
 
 function Header() {
     return (
-        <header>
-            <nav>
-                <div className="img-container">
-                    <img style={{width: "50px"}} src="./mail-icon.png" />
-                </div>
-            </nav>
-        </header>
+        <nav className="d-flex justify-content-between navbar-container">
+            <div className="navbar-img-container">
+                <img className="navbar-img" src="./react-logo.png" />
+            </div>
+            <ul className="d-flex m-0 align-items-center flex-wrap navbar-elems">
+                <a className="p-3 navbar-elem">Pricing</a>
+                <a className="p-3 navbar-elem">About</a>
+                <a className="p-3 navbar-elem">Contact</a>
+            </ul>
+        </nav>
     )
 }
 

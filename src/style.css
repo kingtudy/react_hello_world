@@ -1,0 +1,19 @@
+.navbar-elem {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.navbar-img-container {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-container {
+    margin-top: 15px;
+}
